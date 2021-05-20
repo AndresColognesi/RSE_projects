@@ -4,7 +4,9 @@ This projects consists in creating a wheeled robot that follows a white ball ins
 
 ## Structure
 
-The project consists of 2 packages: `/my_robot` and `/ball_chaser`. The first one constains all files needed for the dynamic simulation of the robot inside a test world, as well as all robot assets and the robot itself (`/meshes` and `/urdf`). Additionally to what is minimally required by the course, the robot was modeled using the Onshape CAD tool, and therefore the model can be accessed via https://cad.onshape.com/documents/2b220a0837bb66d113323dec/w/9a0097a8bb1ea4ca324e3bce/e/adca8ea51954d0e551172b3f . Also, the `/my_robot/rviz` folder was created to host the `.rviz` file that configures the robot, camera and lidar on RViz. This file is automatically loaded in the `/my_robot/launch/world.launch` file to make things easier. 
+The project consists of 2 packages: `/my_robot` and `/ball_chaser`. The first one constains all files needed for the dynamic simulation of the robot inside a test world, as well as all robot assets and the robot itself (`/meshes` and `/urdf`). Additionally to what is minimally required by the course, the robot was modeled using the Onshape CAD tool, and therefore the model can be accessed [here](https://cad.onshape.com/documents/2b220a0837bb66d113323dec/w/9a0097a8bb1ea4ca324e3bce/e/adca8ea51954d0e551172b3f "SimpleBot CAD") . Also, the `/my_robot/rviz` folder was created to host the `.rviz` file that configures the robot, camera and lidar on RViz. This file is automatically loaded in the `/my_robot/launch/world.launch` file to make things easier.
+
+**NOTE:** The world file in this project is different from the one of Project 1. Some improvements were made based on the Udacity review comments on Project 1.
 
 ## How to Run
 
