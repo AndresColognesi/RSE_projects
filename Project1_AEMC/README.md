@@ -14,4 +14,4 @@ The world file is located on the `/world` folder of this repo and contains the c
 
 ## Plugin
 
-The project also has a Gazebo Plugin located on the `/script` folder. It works together with the `CMakeLists.txt` file to run properly and was based on the "hello world plugin" tutorial from Gazebo (see http://gazebosim.org/tutorials?tut=plugins_hello_world&cat=write_plugin). To make this plugin work properly, create your own `/build` folder following the steps of the tutorial - the build files are system dependent! This means that it will only work in your own system. The `/build` folder is mantained on this repo jut to visually remind that it needs to be created for the plugin to work!
+The project also has a Gazebo Plugin located on the `/script` folder. It works together with the `CMakeLists.txt` file to run properly and was based on the ["hello world plugin" tutorial from Gazebo](http://gazebosim.org/tutorials?tut=plugins_hello_world&cat=write_plugin). To make this plugin work properly, create your own `/build` folder following the steps of the tutorial - the build files are system dependent! This means that it will only work in your own system.
