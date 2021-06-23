@@ -32,6 +32,8 @@ roslaunch my_robot mapping.launch
 
 To make a good map of the environment it is best to go arround the map 3 times in similar trajectories. In this way, loop-closures are generated and the generated map will be more accurate. To visualize the resulting `rtabmap.db`, type following command:
 ```
+rtabmap-databaseViewer ~/.ros/rtabmap.db
 ```
+Then add two displays: __View > Constraint View__ and __View > Graph View__
 
 **WARNING:** After mapping, save a copy of `rtabmap.db` in another directory. If you start another `mapping.launch` it will delete the previous `rtabmap.db` file inside `/root/.ros/` **!!!**
