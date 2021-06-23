@@ -34,6 +34,6 @@ To make a good map of the environment it is best to go arround the map 3 times i
 ```
 rtabmap-databaseViewer ~/.ros/rtabmap.db
 ```
-Then add two displays: *View > Constraint* View__ and *View > Graph View*
+Then add two displays: *View > Constraint View* and *View > Graph View*
 
 **WARNING:** After mapping, save a copy of `rtabmap.db` in another directory. If you start another `mapping.launch` it will delete the previous `rtabmap.db` file inside `/root/.ros/` **!!!**
