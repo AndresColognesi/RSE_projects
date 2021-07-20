@@ -25,7 +25,7 @@ roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find home_servic
 
 **Terminal 3 - RViz for Localization**
 ```
-roslaunch turtlebot_rviz_launchers view_navigation.launch
+roslaunch home_service view_navigation.launch
 ```
 
 **Terminal 4 - Autonomous navigation to 2 goals**
@@ -156,7 +156,7 @@ roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find home_servic
 
 **Terminal 3 - RViz for Localization**
 ```
-roslaunch turtlebot_rviz_launchers view_navigation.launch
+roslaunch home_service view_navigation.launch
 ```
 
 **Terminal 4 - Adding Markers on RViz**
