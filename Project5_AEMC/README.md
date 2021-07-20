@@ -30,12 +30,12 @@ roslaunch home_service view_navigation.launch
 
 **Terminal 4 - Autonomous navigation to 2 goals**
 ```
-rosrun pick_objects pick_objects_node
+rosrun home_service pick_objects_node
 ```
 
 **Terminal 5 - Adding Markers on RViz**
 ```
-rosrun add_markers add_markers_node
+rosrun home_service add_markers_node
 ```
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! REVIEW COMMANDS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
