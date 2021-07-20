@@ -20,7 +20,7 @@ roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find hom
 
 **Terminal 2 - Localization using AMCL**
 ```
-roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find map)/map.yaml
+roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find home_service)/maps/map.yaml
 ```
 
 **Terminal 3 - RViz for Localization**
@@ -106,7 +106,7 @@ roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find hom
 
 **Terminal 2 - Localization using AMCL**
 ```
-roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find map)/map.yaml
+roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find home_service)/maps/map.yaml
 ```
 
 **Terminal 3 - RViz for Localization**
@@ -125,7 +125,7 @@ roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find hom
 
 **Terminal 2 - Localization using AMCL**
 ```
-roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find map)/map.yaml
+roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find home_service)/maps/map.yaml
 ```
 
 **Terminal 3 - RViz for Localization**
@@ -151,7 +151,7 @@ roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find hom
 
 **Terminal 2 - Localization using AMCL**
 ```
-roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find map)/map.yaml
+roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find home_service)/maps/map.yaml
 ```
 
 **Terminal 3 - RViz for Localization**
