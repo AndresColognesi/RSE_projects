@@ -15,7 +15,7 @@ To launch all this application it is only necessary to navigate to the `/catkin_
 
 **Terminal 1 - World + Robot**
 ```
-roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find turtlebot_gazebo)/worlds/andres.world
+roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find home_service)/worlds/andres.world
 ```
 
 **Terminal 2 - Localization using AMCL**
@@ -50,7 +50,7 @@ To test the SLAM feature of the project, navigate to the `/catkin_ws` of the pro
 
 **Terminal 1 - World + Robot**
 ```
-roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find turtlebot_gazebo)/worlds/andres.world
+roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find home_service)/worlds/andres.world
 ```
 
 **Terminal 2 - SLAM package**
@@ -62,7 +62,6 @@ roslaunch turtlebot_gazebo gmapping_demo.launch
 ```
 roslaunch turtlebot_rviz_launchers view_navigation.launch
 ```
-
 
 **Terminal 4 - Keyboard Control**
 ```
@@ -102,7 +101,7 @@ This will create a `map.pgm` and a `map.yaml` file in the folder that you are at
 
 **Terminal 1 - World + Robot**
 ```
-roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find turtlebot_gazebo)/worlds/andres.world
+roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find home_service)/worlds/andres.world
 ```
 
 **Terminal 2 - Localization using AMCL**
@@ -121,7 +120,7 @@ For this test, 2 goal locations are sent to the robot, one for pickup and one fo
 
 **Terminal 1 - World + Robot**
 ```
-roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find turtlebot_gazebo)/worlds/andres.world
+roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find home_service)/worlds/andres.world
 ```
 
 **Terminal 2 - Localization using AMCL**
@@ -147,7 +146,7 @@ This will later be combined with the PickUp node, making the virtual object visu
 
 **Terminal 1 - World + Robot**
 ```
-roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find turtlebot_gazebo)/worlds/andres.world
+roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$(rospack find home_service)/worlds/andres.world
 ```
 
 **Terminal 2 - Localization using AMCL**
