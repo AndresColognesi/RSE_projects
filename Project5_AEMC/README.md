@@ -38,7 +38,6 @@ rosrun home_service pick_objects_home
 rosrun home_service add_markers_home
 ```
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! REVIEW COMMANDS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ### Test Launches
 
