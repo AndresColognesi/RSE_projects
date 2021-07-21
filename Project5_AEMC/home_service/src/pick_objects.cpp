@@ -42,6 +42,12 @@ int main(int argc, char** argv){
    // Send the first goal position and orientation for the robot to reach
   ROS_INFO("Sending pickup goal");
   ac.sendGoal(goal);
+  
+  // Set data for service request and call service to display object:
+  srv.request.adding = true;
+  srv.request.x = goal.target_pose.pose.position.x;
+  srv.request.y = goal.target_pose.pose.position.y;
+  client.call(srv);
 
   // Wait an infinite time for the results
   ac.waitForResult();
