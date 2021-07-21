@@ -6,7 +6,19 @@
 
 //--- Defining our Virtual Object Marker Class ---//
 
-class VO_Marker {   
+class VO_Marker {
+  private: // Class attributes
+    // shape type for our virtual object
+    uint32_t shape;
+    // marker message
+    visualization_msgs::Marker marker;
+    // publishers:
+    ros::Publisher marker_pub;
+    // service:
+    ros::ServiceServer service;
+    // node handle:
+    ros::NodeHandle n;
+ 
   public: // Constructor and methods
     // Constructor:
     VO_Marker(){
@@ -96,21 +108,8 @@ class VO_Marker {
       }
       return true;
     }
-
-  private: // Class attributes
-    // shape type for our virtual object
-    uint32_t shape;
-    // marker message
-    visualization_msgs::Marker marker;
-    // publishers:
-    ros::Publisher marker_pub;
-    // service:
-    ros::ServiceServer service;
-    // node handle:
-    ros::NodeHandle n;
   
 }; //end of class
-
 
 
 
@@ -120,7 +119,7 @@ int main( int argc, char** argv )
   ros::init(argc, argv, "add_markers_server");
 
   // Create marker object that will start the marker server node
-  VO_Marker my_marker;
+  VO_Marker my_marker = VO_Marker();
   //DEBUG
   my_marker.debug_topic();
 
