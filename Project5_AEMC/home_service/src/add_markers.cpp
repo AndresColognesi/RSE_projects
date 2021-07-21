@@ -52,9 +52,9 @@ class VO_Marker {
       marker.pose.orientation.w = 1.0;
       
       // Set the scale of the marker -- 1x1x1 here means 1m on a side
-      marker.scale.x = 0.2;
-      marker.scale.y = 0.2;
-      marker.scale.z = 0.2;
+      marker.scale.x = 1.0;
+      marker.scale.y = 1.0;
+      marker.scale.z = 1.0;
       
       // Set the color -- be sure to set alpha to something non-zero!
       marker.color.r = 1.0f;
@@ -66,61 +66,12 @@ class VO_Marker {
 
       //-- Set publisher, server and publish marker --//
       marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 10);
-      ROS_INFO("Marker is displayed on pickup location");
-      marker_pub.publish(marker); //display marker
       service = n.advertiseService("edit_markers", &VO_Marker::editMarker, this);
       ROS_INFO("Ready to edit markers.");
     }
   
+
     // Methods
-
-    //DEBUG METHOD:
-    void publish_new_marker(){
-      // Create new publisher:
-      //ros::Publisher pubNewMark = n.advertise<visualization_msgs::Marker>("visualization_marker", 1);
-      // Create new marker:
-      visualization_msgs::Marker new_marker;
-      // Set the frame ID and timestamp.  See the TF tutorials for information on these.
-      new_marker.header.frame_id = "map";
-      new_marker.header.stamp = ros::Time::now();
-      
-      // Set the namespace and id for this marker.  This serves to create a unique ID
-      // Any marker sent with the same namespace and id will overwrite the old one
-      new_marker.ns = "teste";
-      new_marker.id = 0;
-      
-      // Set the marker type.  It is allways a SPHERE
-      new_marker.type = visualization_msgs::Marker::CUBE;
-      
-      // Set the marker action.  Options are ADD, DELETE, and new in ROS Indigo: 3 (DELETEALL)
-      new_marker.action = visualization_msgs::Marker::ADD;
-      
-      // Set the pose of the marker as the pickup position.  This is a full 6DOF pose relative to the frame/time specified in the header
-      new_marker.pose.position.x = 2.0;
-      new_marker.pose.position.y = 1.0;
-      new_marker.pose.position.z = 0;
-      new_marker.pose.orientation.x = 0.0;
-      new_marker.pose.orientation.y = 0.0;
-      new_marker.pose.orientation.z = 0.0;
-      new_marker.pose.orientation.w = 1.0;
-      
-      // Set the scale of the marker -- 1x1x1 here means 1m on a side
-      new_marker.scale.x = 1.0;
-      new_marker.scale.y = 1.0;
-      new_marker.scale.z = 1.0;
-      
-      // Set the color -- be sure to set alpha to something non-zero!
-      new_marker.color.r = 0.0f;
-      new_marker.color.g = 0.0f;
-      new_marker.color.b = 1.0f;
-      new_marker.color.a = 1.0;
-      
-      new_marker.lifetime = ros::Duration();
-
-      // Publish new marker:
-      marker_pub.publish(new_marker);
-      ROS_INFO("Publicou novo marcador");
-    }
 
     //--- Service callback function ---//
     bool editMarker(home_service::EditMarker::Request  &req,
@@ -159,9 +110,6 @@ int main( int argc, char** argv )
 
   // Create marker object that will start the marker server node
   VO_Marker my_marker = VO_Marker();
-
-  //DEBUG:
-  my_marker.publish_new_marker();
 
   // Keeping the node alive
   ros::spin();
