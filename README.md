@@ -4,4 +4,4 @@ This repository contains the projects (as well as some labs) developed for the U
 
 The purpose of this repo is to organize the deliverables and store them for later access.
 
-**NOTE:** If you are enrolled on this same program, do NOT send these projects as your own!
+**WARNING:** If you are enrolled on this same program, do NOT send these projects as your own!
